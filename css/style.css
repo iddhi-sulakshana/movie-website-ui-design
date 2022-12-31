@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+    :root {
+        --pb-color: #040030;
+        --sb-color: #080151;
+        --primary-color: #1a1463;
+        --navbar-color: rgba(255, 255, 255, 0.15);
+        --primary-font-color: #fff;
+        --border-radius: 0.8rem;
+        --background-blur: 5rem;
+    }
+
+/* body */
+    body {
+        background-color: var(--pb-color);
+        position: relative;
+        min-height: 100vh;
+    }
+
+/* Nav Bar */
+    #navbar {
+        background-color: var(--navbar-color) !important;
+    }
+    .search-box{
+        position:relative;
+        width:0px;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+    }
+    .search-box.active{
+        width: 200px;
+    }
+    .search-box.active input{
+        opacity:1;
+    }
+    .search-box input{
+        height:70%;
+        width:100%;
+        border:none;
+        background:var(--primary-font-color);
+        border-radius: var(--border-radius);
+        padding: 0.5rem;
+        outline:none;
+        opacity:0;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+    }
+    .search-box .search-btn{
+        height:50px;
+        width:50px;
+        background:transparent;
+        color:var(--primary-font-color);
+        position: absolute;
+        top:50%;
+        right:-40px;
+        transform: translateY(-50%);
+        line-height:50px;
+        text-align:center;
+        border-radius:50%;
+        font-size:20px;
+        cursor:pointer;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+        z-index:2;
+    }
+    #usericon{
+        padding: 0.5rem 0.8rem;
+        border: 0.1rem solid var(--primary-font-color);
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .loading-bar {
+        border-radius: 5rem;
+        right: auto;
+        left: 0;
+        position: absolute;
+        width: 0;
+        height: 0.3rem;
+        background-color: var(--pb-color);
+        border-bottom: 0.1rem solid var(--navbar-color);
+        bottom: 0;
+    }

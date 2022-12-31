@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ABC Movies</title>
+    <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="./fontawesome/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+        <script src="./js/gsap.min.js"></script>
+        <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg pt-3 pb-3" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">ABC Movies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0" style="margin-right: 10rem;">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Upcoming</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <div class="nav-item" style="margin-right: 4rem;">
+                    <div class="search-box">
+                        <input type="text" class="inputbox" onblur="lose()" placeholder="Type to search..."/>
+                        <div class="search-btn">
+                            <i class="fa-light fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <i id="usericon" class="fa-light fa-user" style="color: white;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="loading-bar"></div>
+    </nav>    
+</body>
+</html>
