@@ -1,0 +1,34 @@
+/* cover */
+    #hero {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; 
+    }
+    #hero .cover-header {
+        font-size: 6rem;
+        line-height: 10rem;
+        font-weight: 700;
+    }
+    #hero .cover-description {
+        width: 50%;
+        line-height: 2rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+/* breakpoints */
+@media (max-width: 991.98px) {
+    #hero .cover-description{
+        width: 100%;
+    }
+    #hero .cover-header{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    #hero .cover-description{
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}

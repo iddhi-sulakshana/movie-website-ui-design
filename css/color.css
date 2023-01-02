@@ -1,0 +1,15 @@
+:root {
+    --dark-black: #0d0d0d;
+    --light-dark: #1a171e;
+    --grey: #95989f;
+    --red: #eb1c24;
+    --white: #fff;
+
+
+    --background-color:var(--dark-black) !important;
+    --primary-font-color: var(--white) !important;
+    --secondary-font-color: var(--grey) !important;
+    --special-color: var(--red) !important;
+
+    --sec-background-color: var(--light-dark) !important;
+}
