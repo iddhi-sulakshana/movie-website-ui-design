@@ -4,12 +4,12 @@
     --grey: #95989f;
     --red: #eb1c24;
     --white: #fff;
+    --card-background: rgba(0, 0, 0, 0.75);
 
+    --background-color:var(--dark-black);
+    --primary-font-color: var(--white);
+    --secondary-font-color: var(--grey);
+    --special-color: var(--red);
 
-    --background-color:var(--dark-black) !important;
-    --primary-font-color: var(--white) !important;
-    --secondary-font-color: var(--grey) !important;
-    --special-color: var(--red) !important;
-
-    --sec-background-color: var(--light-dark) !important;
+    --sec-background-color: var(--light-dark);
 }

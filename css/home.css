@@ -18,7 +18,43 @@
         margin-bottom: 2rem;
     }
 
+/* Movies */
+    .movies .section-header {
+        font-weight: 500;
+    }
+
+/* Card */
+    .card {
+        overflow: hidden;
+    }
+    .card .card-img-overlay {
+        transform: translateY(100%);
+        background-color: var(--card-background);
+        backdrop-filter: blur(0.2rem);
+    }
+    .card .card-img-overlay .card-title {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .card .card-img-overlay .card-text {
+        line-height: 1.5rem;
+        font-weight: 300;
+    }
+
 /* breakpoints */
+/* sm */
+@media (max-width: 575px){
+    .card .card-img-overlay .card-title{
+        font-size: 2rem;
+    }
+    .card .card-img-overlay .card-text {
+        line-height: 1rem;
+    }
+    .card .card-img-overlay .btn{
+        width: 100%;
+    }
+}
+/* under lg */
 @media (max-width: 991.98px) {
     #hero .cover-description{
         width: 100%;
