@@ -136,8 +136,9 @@
 
 /* Footer */
     footer {
-        position: absolute;
+        position: relative;
         top: auto;
+        bottom: 0;
         width: 100%;
         background-color: var(--sec-background-color);
     }

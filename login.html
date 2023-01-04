@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/login.css">
+	<title>Login / Signup</title>
+	 <!-- Styles -->
+	 <link rel="stylesheet" href="./css/breakpoint.css">
+	 <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+	 <link rel="stylesheet" href="./fontawesome/css/all.css">
+	 <link rel="stylesheet" href="./css/color.css">
+	 <link rel="stylesheet" href="./css/style.css">
+	
+
+ <!-- Scripts -->
+	 <script defer src="./bootstrap/js/bootstrap.js"></script>
+	 <script src="./js/gsap.min.js"></script>
+	 <script defer src="./js/main.js"></script>
+	 <script defer src="./js/home.js"></script>
+</head>
+
+<body>
+<!-- header -->
+<div id="clonenav">.</div>
+<header>
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
+		<div class="container-sm">
+			<a class="navbar-brand" href="#">ABC Movies</a>
+			<button class="navbar-toggler" type="button" data-bs- data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa-light fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-2 mb-lg-0" style="margin-right: 10rem;">
+					<li class="nav-item mx-2">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#upcoming">Upcoming</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#">About</a>
+					</li>
+				</ul>
+				<div class="nav-item" style="margin-right: 2rem;">
+					<div class="search-box">
+						<input type="text" class="form-control inputbox" placeholder="Type to search..."/>
+						<div class="search-btn">
+							<i class="fa-light fa-search"></i>
+						</div>
+					</div>
+				</div>
+				<div class="nav-item p-2">
+					<i id="usericon" class="fa-light fa-user"></i>
+				</div>
+				<div class="nav-item p-2">
+					<button class="btn btn-outline-info rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-light fa-bell"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="loading-bar"></div>
+	</nav>
+</header>
+	<!-- Body area -->
+	<div class="mainFrame">
+		<div class="wrapper">
+			<div class="title-text">
+				<div class="title login">Login</div>
+				<div class="title signup">Signup</div>
+			</div>
+			<div class="form-container">
+				<div class="slide-controls">
+					<input type="radio" name="slide" id="login" checked>
+					<input type="radio" name="slide" id="signup">
+					<label for="login" class="slide login">Login</label>
+					<label for="signup" class="slide signup">Signup</label>
+					<div class="slider-tab"></div>
+				</div>
+				<div class="form-inner">
+					<form action="#" class="login">
+						<div class="field">
+							<input class="npt" type="text" placeholder="Email Address" required>
+						</div>
+						<div class="field">
+							<input type="password" placeholder="Password" required>
+						</div>
+						<!-- <div class="pass-link"><a href="#">Forgot password?</a></div> -->
+						<div class="field btn">
+							<div class="btn-layer"></div>
+							<input type="submit" value="Login">
+						</div>
+						<div class="signup-link">don't have an account?<a href="" style="color: #0000FF;"> Signup Now</a></div>
+					</form>
+					<form action="#" class="signup">
+						<div class="field">
+							<input type="text" placeholder="Full Name" required>
+						</div>
+						<div class="field">
+							<input type="text" placeholder="Email" required>
+						</div>
+						<div class="field">
+							<input type="text" placeholder="Phone" required>
+						</div>
+						<div class="field">
+							<input type="password" placeholder="Password" required>
+						</div>
+						<div class="field">
+							<input type="password" placeholder="Confirm password" required>
+						</div>
+						<div class="field btn">
+							<div class="btn-layer"></div>
+							<input type="submit" value="Signup">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="text-white position-absolute text-center">
+			<div class="text-center p-1">
+				© 2023 ABC Movies, All rights reserved.
+			</div>
+		</footer>
+	</div>
+	<script>
+		const loginText = document.querySelector(".title-text .login");
+		const loginForm = document.querySelector("form.login");
+		const loginBtn = document.querySelector("label.login");
+		const signupBtn = document.querySelector("label.signup");
+		const signupLink = document.querySelector("form .signup-link a");
+		signupBtn.onclick = (() => {
+			loginForm.style.marginLeft = "-50%";
+			loginText.style.marginLeft = "-50%";
+		});
+		loginBtn.onclick = (() => {
+			loginForm.style.marginLeft = "0%";
+			loginText.style.marginLeft = "0%";
+		});
+		signupLink.onclick = (() => {
+			signupBtn.click();
+			return false;
+		});
+
+	</script>
+</body>
+
+</html>
