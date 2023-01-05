@@ -1,40 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+#navbar {
+	z-index: 1000 !important;
 }
-
 body {
-	background: url(mm.jpg);
+	background: url('../assets/primary-images/loginbg.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .mainFrame {
-	background-color: transparent;
+	background-color: var(--card-background);
 	width: 100%;
-	height: auto;
-	z-index: 1;
-}
-
-::selection {
-	background: #1a75ff;
-	color: #fff;
+	height: 100%;
+	z-index: -2000;
 }
 
 .wrapper {
 	overflow: hidden;
 	max-width: 390px;
-	background: rgba(255, 255, 255, 0.2);
+	background: var(--card-background);
 	backdrop-filter: blur(12px);
 	padding: 30px;
 	border-radius: 15px;
@@ -50,14 +35,14 @@ body {
 .wrapper .title-text {
 	display: flex;
 	width: 200%;
-	color: #000000;
+	color: var(--primary-font-color);
 	
 }
 
 .wrapper .title {
 	width: 50%;
 	font-size: 35px;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 	transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -70,14 +55,14 @@ body {
 	overflow: hidden;
 	margin: 30px 0 10px 0;
 	justify-content: space-between;
-	border: 1px solid lightgrey;
+	border: 1px solid var(--special-color);
 	border-radius: 15px;
 }
 
 .slide-controls .slide {
 	height: 100%;
 	width: 100%;
-	color: #fff;
+	color: var(--primary-font-color);
 	font-size: 15px;
 	font-weight: 500;
 	text-align: center;
@@ -88,7 +73,7 @@ body {
 }
 
 .slide-controls label.signup {
-	color: #000;
+	color: var(--primary-font-color);
 }
 
 .slide-controls .slider-tab {
@@ -111,17 +96,17 @@ input[type="radio"] {
 }
 
 #signup:checked~label.signup {
-	color: #fff;
+	color: var(--primary-font-color);
 	cursor: default;
 	user-select: none;
 }
 
 #signup:checked~label.login {
-	color: #000;
+	color: var(--primary-font-color);
 }
 
 #login:checked~label.signup {
-	color: #000;
+	color: var(--primary-font-color);
 }
 
 #login:checked~label.login {
@@ -155,40 +140,26 @@ input[type="radio"] {
 	width: 100%;
 	outline: none;
 	padding-left: 15px;
-	border-radius: 15px;
-	border: 1px solid lightgrey;
+	border-radius: var(--border-radius);
+	border: 1px solid var(--sec-background-color);
 	border-bottom-width: 2px;
 	font-size: 17px;
 	transition: all 0.3s ease;
 }
 
-.form-inner form .field input:focus {
-	border-color: #1a75ff;
-	/* box-shadow: inset 0 0 3px #fb6aae; */
-}
-
-.form-inner form .field input::placeholder {
-	color: #999;
-	transition: all 0.3s ease;
-}
-
-form .field input:focus::placeholder {
-	color: #1a75ff;
-}
-
 .form-inner form .pass-link {
-	margin-top: 5px;
+	margin-top: 5px;	
 }
 
 .form-inner form .signup-link {
 	text-align: center;
 	margin-top: 30px;
-	color: #000000;
+	color: var(--primary-font-color);
 }
 
 .form-inner form .pass-link a,
 .form-inner form .signup-link a {
-	color: #1a75ff;
+	color: var(--special-color) !important;
 	text-decoration: none;
 }
 
@@ -227,10 +198,28 @@ form .btn input[type="submit"] {
 	position: relative;
 	background: none;
 	border: none;
-	color: #fff;
+	color: var(--primary-font-color);
 	padding-left: 0;
 	border-radius: 15px;
 	font-size: 20px;
 	font-weight: 500;
 	cursor: pointer;
 }
+/* Break Points */
+    /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) {
+		.form-inner form .field {
+			height: 35px;
+			width: 100%;
+			margin-top: 10px;
+		}
+		.form-inner form .field input {
+			font-size: 15px;
+		}
+		form .btn input[type="submit"]{
+			font-size: 15px;
+		}
+		.wrapper .title {
+			font-size: 25px;
+		}
+    }
