@@ -5,6 +5,7 @@
         margin: 0;
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
+        color: var(--primary-font-color);
     }
     i {
         font-size: 1.15rem;
@@ -16,7 +17,7 @@
         width:100%;
         border:none;
         background: transparent !important;
-        border: 1px solid var(--primary-font-color) !important;
+        border: 1px solid var(--special-color) !important;
         color: var(--primary-font-color) !important;
         border-radius: var(--border-radius) !important;
         padding: 0.5rem;
@@ -71,6 +72,7 @@
         background-color: var(--sec-background-color) !important;
     }
     .navbar-brand {
+        color: var(--special-color);
         font-size: 1.5rem;
         font-weight: 700;
     }
@@ -129,18 +131,6 @@
         background-color: var(--special-color);
         border-bottom: 0.1rem solid var(--sec-background-color);
         bottom: 0;
-    }
-
-/* Section */
-
-
-/* Footer */
-    footer {
-        position: relative;
-        top: auto;
-        bottom: 0;
-        width: 100%;
-        background-color: var(--sec-background-color);
     }
 
 /* Break Points */

@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Styles -->
+        <link rel="stylesheet" href="./css/preload.css">
         <link rel="stylesheet" href="./css/breakpoint.css">
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="./fontawesome/css/all.css">
@@ -23,6 +24,10 @@
         <script defer src="./js/home.js"></script>
 </head>
 <body>
+    <div id="preload">
+        <div id="loader"></div>
+    </div>
+    <script src="./js/preload.js"></script>
 <!-- Uncomment this to display bootstrap breakpoints -->
 <!-- <div class="breakpoint"></div> -->
 <!-- header -->
@@ -30,8 +35,8 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
             <div class="container-sm">
-                <a class="navbar-brand" href="#">ABC Movies</a>
-                <button class="navbar-toggler" type="button" data-bs- data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="./">ABC Movies</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-light fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -40,31 +45,30 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#upcoming">Upcoming</a>
+                            <a class="nav-link" href="./#upcoming">Upcoming</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
                     </ul>
                     <div class="nav-item" style="margin-right: 2rem;">
                         <div class="search-box">
-                            <input type="text" class="form-control inputbox" placeholder="Type to search..."/>
+                            <input type="text" class="inputbox" placeholder="Type to search..."/>
                             <div class="search-btn">
                                 <i class="fa-light fa-search"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="nav-item p-2">
+                    </div> 
+                    <a href="./login.html"><div class="nav-item p-2">
                         <i id="usericon" class="fa-light fa-user"></i>
                     </div>
-                    <div class="nav-item p-2">
-                        <button class="btn btn-outline-info rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-light fa-bell"></i></button>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="loading-bar"></div>
         </nav>
     </header>
+<!-- end header -->
 <!-- Cover -->
     <div id="hero" class="p-lg-5 p-0" style="background-image: url('./assets/cover/cover1.jpg');">
         <div class="container h-100 d-flex align-items-center">
@@ -170,42 +174,5 @@
             </div>
         </div>
     </section>
-<!-- Notification Canvas -->
-    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Notifications</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ol class="list-group gap-2">
-                <li class="list-group-item active rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-                <li class="list-group-item rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-                <li class="list-group-item active rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-                <li class="list-group-item rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-                <li class="list-group-item rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-            </ol>
-        </div>
-    </div>
-<!-- Footer -->
-    <footer class="text-white position-absolute text-center">
-        <div class="text-center p-1">
-            © 2023 ABC Movies, All rights reserved.
-        </div>
-    </footer>
 </body>
 </html>

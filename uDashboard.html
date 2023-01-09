@@ -79,24 +79,6 @@
                             </div>
                             <div class="col-auto">
                                 <button class="btn btn-lg btn-outline-danger" data-bs-toggle="modal" data-bs-target="#logoutModal">Log out</button>
-                                <!-- Logout modal -->
-                                <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content text-bg-dark">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="logoutModalLabel">Log Out !</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Do you want to Log out?
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-outline-danger">Log out</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -133,24 +115,6 @@
                         <div class="row gap-2 text-center">
                             <div class="col">
                                 <button type="button" id="deleteAcc" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete Account</button>
-                                <!-- delete modal -->
-                                    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content text-bg-dark">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="deleteModalLabel">Delete !</h1>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    Deleting account will remove everything from the system and it will unreversable action do you still want to delete the account?
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
-                                                    <button type="button" class="btn btn-outline-danger">Delete</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                             </div>
                             <div class="col">
                                 <button type="button" id="editAcc" class="btn btn-outline-warning">Edit Account</button>
@@ -227,42 +191,41 @@
             </div>
         </div>
     </section>
-<!-- Notification Canvas -->
-    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Notifications</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ol class="list-group gap-2">
-                <li class="list-group-item active rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-                <li class="list-group-item rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-                <li class="list-group-item active rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-                <li class="list-group-item rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-                <li class="list-group-item rounded-0">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </li>
-            </ol>
+ <!-- Logout modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="logoutModalLabel">Log Out !</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Do you want to Log out?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger">Log out</button>
+                </div>
+            </div>
         </div>
     </div>
-<!-- Footer -->
-    <footer class="text-white position-absolute text-center">
-        <div class="text-center p-1">
-            © 2023 ABC Movies, All rights reserved.
+ <!-- delete modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="deleteModalLabel">Delete !</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Deleting account will remove everything from the system and it will unreversable action do you still want to delete the account?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-outline-danger">Delete</button>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
 </body>
 </html>

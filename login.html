@@ -23,45 +23,44 @@
 
 <body>
 <!-- header -->
-<div id="clonenav">.</div>
-<header>
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
-		<div class="container-sm">
-			<a class="navbar-brand" href="#">ABC Movies</a>
-			<button class="navbar-toggler" type="button" data-bs- data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fa-light fa-bars"></i>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-				<ul class="navbar-nav mb-2 mb-lg-0" style="margin-right: 10rem;">
-					<li class="nav-item mx-2">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="#upcoming">Upcoming</a>
-					</li>
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="#">About</a>
-					</li>
-				</ul>
-				<div class="nav-item" style="margin-right: 2rem;">
-					<div class="search-box">
-						<input type="text" class="form-control inputbox" placeholder="Type to search..."/>
-						<div class="search-btn">
-							<i class="fa-light fa-search"></i>
-						</div>
-					</div>
-				</div>
-				<div class="nav-item p-2">
-					<i id="usericon" class="fa-light fa-user"></i>
-				</div>
-				<div class="nav-item p-2">
-					<button class="btn btn-outline-info rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-light fa-bell"></i></button>
-				</div>
-			</div>
-		</div>
-		<div class="loading-bar"></div>
-	</nav>
-</header>
+    <div id="clonenav">.</div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
+            <div class="container-sm">
+                <a class="navbar-brand" href="./">ABC Movies</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-light fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0" style="margin-right: 10rem;">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./#upcoming">Upcoming</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="nav-item" style="margin-right: 2rem;">
+                        <div class="search-box">
+                            <input type="text" class="inputbox" placeholder="Type to search..."/>
+                            <div class="search-btn">
+                                <i class="fa-light fa-search"></i>
+                            </div>
+                        </div>
+                    </div> 
+                    <a href="./login.html"><div class="nav-item p-2">
+                        <i id="usericon" class="fa-light fa-user"></i>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="loading-bar"></div>
+        </nav>
+    </header>
+<!-- end header -->
 	<!-- Body area -->
 	<div class="mainFrame">
 		<div class="wrapper">
@@ -116,12 +115,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- Footer -->
-		<footer class="text-white position-absolute text-center">
-			<div class="text-center p-1">
-				© 2023 ABC Movies, All rights reserved.
-			</div>
-		</footer>
 	</div>
 	<script>
 		const loginText = document.querySelector(".title-text .login");
