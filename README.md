@@ -56,6 +56,10 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 
 For any inquiries or feedback, please raise an issue on the GitHub repository.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ## Screenshots
 
 ### Home Page
